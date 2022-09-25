@@ -1,6 +1,6 @@
 # python-projects
 
-This folder is used to store the projects based o python done by me.
+This folder is used to store the projects based on python done by me.
 
 
 Projects:

@@ -41,11 +41,28 @@
         Implementing different functionality with same name in a inherited class.
         We can write a function with same name in child class.
 
+    
+    Class variable:
+        A varaible which is defined inside the class and outside the function.
+        It cannot be accessed inside a function in a class
+        we can access it using the object name
+        Class variables are for attributes.
+    Instance Varibale:
+        A variable which is defined inside a function or constructor in a class.
+        Instance variables are unique for each instance.
+    
+    __init__ method:
+        This init method is used to initialize the state of a object.
+        Used to initialize the data of a class object.
+        The statements in init method will executed duirng the time of creation of object.
+        
+
+
 """
 
 # class creation
 class my_class():
-    id = 1
+    id = 1 # class variable
     def func1(self):
         print("hello world")
 
@@ -57,4 +74,22 @@ print(obj1.id)
 
 # calling methods from a class
 obj1.func1()
+
+# class creation
+class my_class2:
+    # class variable
+    id = 1
+    def __init__(self):
+        # instance variables
+        self.name = "sai"
+    def fun1(self):
+        print(self.name)
+        print(id)
+
+# object creation
+obj2 = my_class2()
+obj2.fun1()
+print(obj2.id)
+
+
 

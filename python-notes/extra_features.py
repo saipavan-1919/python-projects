@@ -21,3 +21,12 @@ di.__delitem__('a')  # removes key value pair with key = 'a' from di
 print(di)
 
 
+# creating a class of car
+class car:
+    def __init__(self,brand,model,colour):
+        self.brand = brand
+        self.model = model
+        self.colour = colour
+
+car1 = car("suzuki","swift","silver")
+print(f"my car company is {car1.brand},my car model name is {car1.model}, and my car colour is {car1.colour}")

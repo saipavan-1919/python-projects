@@ -27,3 +27,13 @@ print(next(a))
 # iterating through genrator using for loop
 for i in gen1():
     print(i)
+
+# my range generator function
+def my_range(n):
+    i=0
+    while i<n:
+        yield i
+        i=i+1
+
+for i in my_range(5):
+    print(i)

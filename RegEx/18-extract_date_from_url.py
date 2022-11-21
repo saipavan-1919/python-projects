@@ -4,6 +4,8 @@
 import re
 
 def extract_date_from_url(url):
+    # \d - used to match with the digits from [0-9]
+    # {} - used to specify the no.of occurences
     date = re.findall(r"\d{4}/\d{2}/\d{2}",url)
     print(date)
 

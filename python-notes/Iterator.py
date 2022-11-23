@@ -5,6 +5,8 @@
     * __iter__() method initializes the iterator object and returns a iterable object.
     * __next__() method is used to next values in the object when iterating/traversing through object.
         this method raise a StopIteration signal to stop the itertion of object.
+    * list, strings, tuples are iterable object created using these methods.
+    * we can see how they implemented from the following. 
 """
 
 class iterable_class:

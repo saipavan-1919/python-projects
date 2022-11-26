@@ -1,3 +1,10 @@
+
+
+# The following is the link for how everything is object in python
+
+# https://www.codingninjas.com/blog/2020/08/27/how-everything-in-python-is-an-object/
+
+
 """
     In pyhton everything is a object.
     pyhton is a object oriented programming language.

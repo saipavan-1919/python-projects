@@ -13,7 +13,8 @@
             it will give the element at the index position
         * strings are immutable and ordered
         * immutable means we cannot change them through indexing.
-        * 
+        * we can conctenate strings using two methods 
+            1) join  2) + symbol
 """
 # string declaration
 str1 = "hi i'm a string"       # we can print single quotations not double quotations
@@ -81,3 +82,32 @@ print("{1} {0}".format)
 
 
 # fstring format
+print(f"hi how are you")
+# printing variables a,b
+a = 2;b=3;
+print(f"a value = {a} b value = {b}")
+
+
+# string concatination
+print("hi" + "how are you")
+str1 = "hi"
+str2 = "how are you"
+str3 = str1 + str2
+print(str3)
+
+# reversing a string using reversed method
+print(reversed(str1))
+print(str1)
+
+# split method
+# split method will split the string based on the delimeter
+#  syntax:  <str_object>.split(<delimeter>)  
+#  returns a list of values at each split
+print("hi how are you".split(" "))
+
+# .join method
+# it takes a iterable and joins all the items in iterable with a value
+# syntax:   <value>.join(<iterator>)
+str1 = "hi how are you"
+str2 = str1.split(" ")
+print("#".join(str2)) #o/p = hi#how#are#you

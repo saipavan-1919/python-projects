@@ -1,6 +1,7 @@
 """
 1) What is python?
-    python is a high level interpreter language.
+    python is a high level interpreter language. 
+    python is object oriented programming language
     python is developed based on c and c++ programming
 
 2) python interpreter
@@ -39,4 +40,77 @@
     d) complex type:
         values are of complex
         var = complex(1,2)  =~ 1+2j
+
+5) Advance data types:
+    mutable means their position values can be interchanged
+    ordered means they will be in the same order for each time
+    a) strings:
+        strings are nothing but collection of characters
+        strings are immutable and ordered
+        syntax: <variable name> = "<string>" or '<string>'
+        ex: var = "sai" or 'sai'
+        there is no specific data type called "char" in python
+    b) lists: 
+        lists are mutable and ordered data types
+        we can keep all kinds of data in the lists
+        syntax: <varible name> = []
+        ex: var = [1,2.5,"str"]
+    c) tuple:
+        typle are similar to list but they are immutable
+        syntas: <variable_name> = ()
+        ex: var = (1,2.5,"str")
+        we can keep all kinds of data in tuple
+    d) dictionary:
+        dictionary is a special data type in python
+        this data type has key and values
+        we can get the values by accessing key 
+        dictinaries are unordered and mutable
+        syntax: <var name> = {}
+        ex: var = {'a':"sai","b":1234}
+        we can keep all kinds of data in the dictionaries too
+    e) sets:
+        sets are unordered and unique data type
+        sets dont contain duplicate of data
+        syntas: <var_name> = {}
+        ex: var = set([1,2,4,1])
+        finally in var there will be onle one 1
+
+
+6) Indentation:
+    In python we separate blocks of code using indentation (spacing)
+    The lines of code which has no spacing (zero indentation) will get executed first
+    if we want to separate a block of code then we can use tabs or spaces.
+    ex: 
+        def func():
+            print("hi")      
+            print("hello")
+
+7) comments:
+    basically comments are used to understand the code, python interepreter ignores comments
+    we can use '#' for one line comments 
+    we can use triple quotes for multiline comments
+
+8) Namespaces:
+    In c programming we know that there will be 2 kind of scopes
+    a) local   -> vars can be accessed in their scope
+    b) global  -> vars can be accessed entire program
+    In python also we have similar scopes 
+    a) built-in -> these are like print, input, etc.. (we can always access these)
+    b) global  -> we can access this varible entire program 
+                (importing of modules, extending scope using global keyword)
+    c) local   -> we can access in its scope (function)
+    ex:
+        c = 30
+        def func1():
+            print(c)  -> throws error (no var called)
+            global c  -> extending scope of c
+            pritn(c)  -> prints c value
+            a = 10    
+            def func2():
+                b = 20   
+                print(a)  -> prints value of a (inner scope var can be accessed)
+                print(b)
+            func2()
+            print(b) -> throws error (not in scope)
+            
 """

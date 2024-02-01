@@ -1,0 +1,42 @@
+"""
+1) What is python?
+    python is a high level interpreter language.
+    python is developed based on c and c++ programming
+
+2) python interpreter
+    python is a interpreter language
+    Interpretes/executes code line by line unlike other languages
+    other languages like c (compiler based), they first compile and then execute.
+
+3) Varible declaration and Dynamic typing:
+    In python we don't need to declare the variables specifically,
+    we can give a varible and assign value to it.
+        syntax: <variable name> = <value>
+        ex: var = 12 or var = "hi"
+    No need to specify the data type before declaring variables
+    The variable type will be converted to the assigned datatype value,
+        this is known as Dynamic typing.
+    -> In python we no need to keep the semicolon(';') after every line.
+        both will work same if we keep the semicolon or not
+        var = 1  or var = 1;
+    -> whenever we declare assign a new type value to the variable 
+        type of variable will change
+
+4) Basic data types
+    a) integer type:
+        values ranges from ...-3,-2,-1,0,1,2,3... (-infinity to +infinity)
+        var = 2; -> 'var' is a variable of integer type
+        we can use int function -> int('25') -> can convert str to integer 
+    b) floating type:
+        values ranging from -p/q to p/q
+        var = 2.5 -> 'var' is a varible of float type
+        we can use float function -> float(1) -> converts integer to float
+        float('1.2') -> converts string to float  
+    c) boolean type:
+        values are of 'True' or 'False'
+        val = True  or val = False -> 'var' is a varible of boolean type
+        we can consider 0 as False and 1 as True
+    d) complex type:
+        values are of complex
+        var = complex(1,2)  =~ 1+2j
+"""
